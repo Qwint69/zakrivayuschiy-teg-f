@@ -78,7 +78,6 @@
   background: transparent;
   transition: opacity 0.3s ease;
   cursor: pointer;
-  appearance: none;
 }
 
 .theme-menu__button:not(:disabled)::after {
@@ -221,7 +220,6 @@
   background: transparent;
   transition: border-color 0.3s ease;
   cursor: pointer;
-  appearance: none;
 }
 
 .card__icon-button:focus {
@@ -242,7 +240,6 @@
   background: var(--background-color);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
-  appearance: none;
 }
 
 .button:focus {
