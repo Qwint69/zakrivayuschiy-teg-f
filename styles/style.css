@@ -67,7 +67,7 @@
 .theme-menu__list {
   display: grid;
   gap: 14px;
-  padding-inline-start: 20px;
+  /* padding-inline-start: 20px; */
 }
 
 .theme-menu__button {
