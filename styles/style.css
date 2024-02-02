@@ -66,7 +66,9 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 14px;
+  gap: 12px;
+  padding-inline-start: 20px;
+  font-size: 14px;
 }
 
 .theme-menu__button {
@@ -77,10 +79,12 @@
   background: transparent;
   transition: opacity 0.3s ease;
   cursor: pointer;
+  appearance: none;
 }
 
 .theme-menu__button:not(:disabled)::after {
   content: "";
+  position: absolute;
   display: block;
   background: currentColor;
   transition: transform 0.3s ease;
@@ -96,6 +100,7 @@
 
 .theme-menu__button:focus {
   outline: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -112,7 +117,7 @@
   content: "▶";
   position: absolute;
   animation: arrow 0.5s ease-in-out infinite alternate;
-  inset-inline-start: -15px;
+  inset-inline-start: -17px;
   inset-block-start: 0px;
 }
 
@@ -232,13 +237,17 @@
 .button {
   position: relative;
   border: 2px solid var(--text-color);
-  padding: 10px 35px;
+  /* padding: 10px 35px; */
   font-family: var(--variative-font-family);
   font-size: 14px;
   text-transform: inherit;
   background: var(--background-color);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+.button-like {
+  inline-size: 130px;
 }
 
 .button:focus {
@@ -268,6 +277,7 @@
 .button__text {
   color: var(--button-text-color);
   mix-blend-mode: difference;
+  margin: auto;
 }
 
 .like-icon {
@@ -317,6 +327,7 @@
 
 .modal__submit-button {
   inline-size: 100%;
+  padding: 10px 36px;
 }
 
 .button-save {
@@ -326,6 +337,12 @@
   align-items: center;
   gap: 8px;
   padding: 15px 20px;
+}
+
+.button__text-submit {
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+  margin: auto;
 }
 
 @media (width <= 375px) {
